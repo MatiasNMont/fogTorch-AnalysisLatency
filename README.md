@@ -1,33 +1,6 @@
-<img src="https://github.com/di-unipi-socc/FogTorch/blob/master/img/logoft.PNG" width="300">
+This is a work based in fogTorch tools.
+The fogTorch Documentation is in https://github.com/di-unipi-socc/FogTorch
 
-_A tool for QoS-aware deployment of IoT applications through the Fog._
-
-FogTorch is based upon the formal model described in
-
-> Antonio Brogi and Stefano Forti <br>
-> [**QoS-aware Deployment of IoT Applications Through the Fog.**](http://ieeexplore.ieee.org/document/7919155/) <br>
->  in _IEEE Internet of Things Journal_ , vol. 4, no. 5, pp. 1185-1192, Oct. 2017.
-
-If you wish to reuse source code in this repo, please cite the above mentioned technical report. The appropriate BibTex is reported below:
-
-```
-@article{fogtorch, 
-	author={A. Brogi and S. Forti}, 
-	journal={IEEE Internet of Things Journal}, 
-	title={QoS-aware Deployment of IoT Applications Through the Fog}, 
-	year={2017}, 
-	volume={4}, 
-	number={5}, 
-	pages={1185-1192}, 
-	keywords={IoT;QoS-aware deployment;fog computing}, 
-	doi={10.1109/JIOT.2017.2701408}, 
-	ISSN={2327-4662}, 
-	month={Oct. 2017}}
-```
-
-# A brief intro to FogTorch
-
-FogTorch inputs the specification of a Fog infrastructure ```I``` along processing (CPU cores, RAM, storage) and QoS (latency, bandwidth) capabilities, and the specification of an application ```A``` to be deployed, along with needed IoT devices, processing (CPU cores, RAM, storage) and QoS (latency, bandwidth) requirements.
-
-The output is either one or all eligible deployments of ```A``` on ```I``` that meet all processing and QoS constraints.
+The goal is analizing the latency in fog Computing topology and extracting conclusion about result obtained
+There is another tools in my git reposotory for creating topology between JSON files. 
 
