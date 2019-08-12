@@ -27,7 +27,6 @@ public class FTExample {
         //Application
         Application A = FTApplication.createApplication();
         Infrastructure I = FTInfrastructure.createInfrastructure();
-        
         Search s = new Search(A, I);
         s.addBusinessPolicies("mlengine", asList("cloud_2", "cloud_1"));
         s.findDeployments(true);

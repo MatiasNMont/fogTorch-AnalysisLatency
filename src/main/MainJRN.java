@@ -17,6 +17,7 @@ public class MainJRN {
     public static void main(String[] args) {
         FTExample example = new FTExample();
         Search result = example.start();
-        System.out.println(result.D);
+        System.out.print(result.D);
+        //System.out.println(result.D);
     }
 }

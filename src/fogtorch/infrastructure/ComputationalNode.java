@@ -79,7 +79,9 @@ public abstract class ComputationalNode implements Comparable{
         if (I.L.containsKey(new Couple<String,String>(this.getId(), t))){
             
             QoSProfile q1 = I.L.get(new Couple(this.getId(), t));
+            System.out.print("\nThe latency between "+this.getId().toString()+" to "+ t + "is "+ q1.getLatency()+"\n");
             QoSProfile q2 = I.L.get(new Couple(t, this.getId()));
+            System.out.print("\nThe latency between "+this.getId().toString()+" to "+ t + "is "+ q1.getLatency()+"\n");
             reach = q1.supports(q) && q2.supports(q);
             //System.out.println(new Couple(this.getId(), t) + " "+ reach);
         }

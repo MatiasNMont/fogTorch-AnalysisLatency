@@ -41,6 +41,10 @@ public class QoSProfile {
     
     public boolean supports(QoSProfile q){
         boolean result = false;
+        //System.out.print("\##############################");
+        //System.out.print("***latenciae s :" + latency+"\n");
+        //System.out.print("La esperada es " + q.getLatency() +"\n");
+        //System.out.print("##############################");
         if (latency <= q.getLatency() && bandwidth >= q.getBandwidth())
             result = true;
         return result;

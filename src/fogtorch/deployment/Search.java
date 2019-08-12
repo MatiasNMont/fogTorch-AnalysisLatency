@@ -169,17 +169,18 @@ public class Search {
                 QoSProfile req2 = A.L.get(couple2);
                 Couple c1 = new Couple(m.getId(), n.getId());
                 Couple c2 = new Couple(n.getId(), m.getId());
-                //System.out.println("Finding a link for " + couple1 + " between " + c1);
+                System.out.println("Finding a link for " + couple1 + " between " + c1);
                 if (I.L.containsKey(c1)) {
                     QoSProfile off1 = I.L.get(c1);
                     QoSProfile off2 = I.L.get(c2);
+                    System.out.print(c1.getA());
                     
                     if (!off1.supports(req1) || !off2.supports(req2)) {
-//                        System.out.println("It does not support QoS... ");
-//                        System.out.println(c1 + " Offered1 "+off1);
-//                        System.out.println(couple1 + "Requirement1 " + req1);
-//                        System.out.println(c2 +" Offered2 " + off2);
-//                        System.out.println(couple2 + "Required2 "+ req2);
+                        System.out.println("It does not support QoS... ");
+                        System.out.println(c1 + " Offered1 "+off1);
+                        System.out.println(couple1 + "Requirement1 " + req1);
+                        System.out.println(c2 +" Offered2 " + off2);
+                        System.out.println(couple2 + "Required2 "+ req2);
                         return false;
                     }
                 } else {
